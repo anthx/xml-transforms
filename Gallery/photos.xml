@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="gallery.xsl"?>
+<gallery title="Photos">
+<meta></meta>
+<images>
+<image>
+	<path>IMG_1464.jpg</path>
+	<description>Town</description>
+</image>
+<image>
+	<path>IMG_1465.jpg</path>
+	<description>Stace</description>
+</image>
+<image>
+	<path>IMG_1466.jpg</path>
+	<description>Shops</description>
+</image>
+<image>
+	<path>IMG_1467.jpg</path>
+	<description>Description</description>
+</image>
+<image>
+	<path>IMG_1468.jpg</path>
+	<description>Description</description>
+</image>
+<image>
+	<path>IMG_1469.jpg</path>
+	<description>Description</description>
+</image>
+<image>
+	<path>IMG_1470.jpg</path>
+	<description>Description</description>
+</image>
+<image>
+	<path>IMG_1471.jpg</path>
+	<description>Description</description>
+</image>
+<image>
+	<path>IMG_1473.jpg</path>
+	<description>Description</description>
+</image>
+<image>
+	<path>IMG_1474.jpg</path>
+	<description>Description</description>
+</image>
+<image>
+	<path>IMG_1475.jpg</path>
+	<description>Description</description>
+</image>
+<image>
+	<path>IMG_1476.jpg</path>
+	<description>Description</description>
+</image>
+<image>
+	<path>IMG_1477.jpg</path>
+	<description>Description</description>
+</image>
+<image>
+	<path>IMG_1478.jpg</path>
+	<description>Description</description>
+</image>
+<image>
+	<path>IMG_1479.jpg</path>
+	<description>Description</description>
+</image>
+</images>
+</gallery>
