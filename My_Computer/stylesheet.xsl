@@ -3,7 +3,7 @@
   <xsl:template match="/">
     <html>
       <head>
-        <title>My Computer - Transformed!</title>
+        <title><xsl:value-of select="data/title" /> - Transformed!</title>
         <style type="text/css">
          table {
 		border: solid 1px black; 
@@ -17,13 +17,44 @@
 	 tr.even {background-color: lightgrey;}
 	 img {display:block;}
 	</style>
+	<script type="text/javascript">
+	var div_list=new Array();
+	var numOfDivs = <xsl:value-of select="count(data/category)" />;
+	
+	<xsl:for-each select="data/category">div_list[<xsl:value-of select="position()-1"/>]="<xsl:value-of select="title/@div_name" />";
+	</xsl:for-each>
+	function toggle(obj) {
+		var el = document.getElementById(obj);
+		for (i=0; i &lt; numOfDivs; i++) { //go through the list of divs...
+			if (div_list[i] != obj){ //checking each one is not the one we want to show only
+				document.getElementById(div_list[i]).style.display = 'none'; //therefore, hide all others
+			}
+		}
+		el.style.display = 'block';
+	}
+	function reset() {
+		for (i=0; i &lt; numOfDivs; i++) { //go through the list of divs...
+			document.getElementById(div_list[i]).style.display = 'block'; //therefore, show all
+			}
+	}
+	</script>
       </head>
       <body>
-        <h2>
-          <xsl:value-of select="data/title" /> <a href="#" onclick="javascript:document.getElementById('hardware').style.display = 'none';">hide</a>
+        <h2 style="float:left;">
+          <xsl:value-of select="data/title" />
         </h2>
+	<div style="float:right; margin-right:5%; padding:2pt; margin-top:2em; border:1pt black solid;">
+		<div style="text-align:center">Table of Contents</div>
+		<xsl:for-each select="data/category">
+			<p><xsl:value-of select="title" />&#160;
+			<a href="#{title/@div_name}">Jump</a>&#160;
+			<a href="#" onclick="javascript:toggle('{title/@div_name}')">Toggle Only This</a>
+			</p>
+		</xsl:for-each>
+		<p><a href="#" onclick="javascript:reset()">Reset All</a></p>
+	</div>
         <xsl:for-each select="data/category">
-          <div id="{title/@div_name}">
+          <div id="{title/@div_name}" style="clear:left;">
             <h3>
               <xsl:value-of select="title" />
             </h3>

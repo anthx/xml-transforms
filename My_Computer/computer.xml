@@ -10,7 +10,7 @@
       <desc>3GHz Dual core with 6MB Cache</desc>
       <rating>5</rating>
       <cost>268</cost>
-      <link>htt://www.intel.com</link>
+      <link>http://www.intel.com</link>
       <manufacturer>Intel</manufacturer>
     </item>
     <item>
@@ -106,6 +106,42 @@
   </category>
   <category>
     <title div_name="software">Computer Software</title>
+    <item>
+      <id>Game: F.E.A.R</id>
+      <name>F.E.A.R - First Encounter Assult Recon</name>
+      <desc>Action movie themed horror shooter</desc>
+      <rating>4</rating>
+      <cost>20</cost>
+      <link>http://www.whatisfear.com</link>
+      <manufacturer>Monolith</manufacturer>
+    </item>
+    <item>
+      <id>Game: Flatout</id>
+      <name>Flatout</name>
+      <desc>Physics stunt racing</desc>
+      <rating>4</rating>
+      <cost>10</cost>
+      <link>http://www.bugbear.fi</link>
+      <manufacturer>Bugbear Entertainment</manufacturer>
+    </item>
+    <item>
+      <id>Game: F.E.A.R XP1</id>
+      <name>F.E.A.R - Extraction Point</name>
+      <desc>Expansion pack for expansion pack's sake</desc>
+      <rating>3</rating>
+      <cost>15</cost>
+      <link>http://www.whatisfear.com</link>
+      <manufacturer>Timegate Studios</manufacturer>
+    </item>
+    <item>
+      <id>Game: F.E.A.R XP2</id>
+      <name>F.E.A.R - Perseus Mandate</name>
+      <desc>Expansion pack for expansion pack's sake</desc>
+      <rating>3</rating>
+      <cost>15</cost>
+      <link>http://www.whatisfear.com</link>
+      <manufacturer>Timegate Studios</manufacturer>
+    </item>
     <item>
       <id>Game: OB</id>
       <name>The Orange Box</name>
