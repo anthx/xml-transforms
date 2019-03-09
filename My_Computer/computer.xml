@@ -1,103 +1,137 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="stylesheet.xsl"?>
-<computer>
-  <component>
-    <part>CPU</part>
-    <name>E8400 Core 2 Duo</name>
-    <desc>3GHz Dual core with 6MB Cache</desc>
-    <rating>5</rating>
-    <cost>268</cost>
-    <link>htt://www.intel.com</link>
-    <manufacturer>Intel</manufacturer>
-  </component>
-  <component>
-    <part>gfx</part>
-    <name>Nvidia GeForce 8800GT</name>
-    <desc>128 Stream Processors, 512 MB DDR3 VRAM</desc>
-    <cost>355</cost>
-    <link>http://www.gainward.com</link>
-    <rating>5</rating>
-    <manufacturer>Gainward</manufacturer>
-  </component>
-  <component>
-    <part>wlan</part>
-    <name>WMP54G Wireless-G</name>
-    <desc>PCI Wireless Card</desc>
-    <cost>39</cost>
-    <link>http://www.linksys.com.au</link>
-    <rating>4</rating>
-    <manufacturer>Linksys</manufacturer>
-  </component>
-  <component>
-    <part>hdd</part>
-    <name>Baracuda</name>
-    <desc>250GB SATA2 HDD with NCQ</desc>
-    <cost>84</cost>
-    <link>http://www.seagate.com</link>
-    <rating>5</rating>
-    <manufacturer>Seagate</manufacturer>
-  </component>
-  <component>
-    <part>OS</part>
-    <name>Windows Vista Ultimate</name>
-    <desc>32Bit OEM</desc>
-    <cost>249</cost>
-    <link>http://www.microsoft.com/windows</link>
-    <rating>4</rating>
-    <manufacturer>Microsoft</manufacturer>
-  </component>
-  <component>
-    <part>mobo</part>
-    <name>P5K</name>
-    <desc>Standard Motherboard stuff</desc>
-    <cost>155</cost>
-    <link>http://www.asus.com</link>
-    <rating>4</rating>
-    <manufacturer>Asustek</manufacturer>
-  </component>
-  <component>
-    <part>ram</part>
-    <name>Value Select</name>
-    <desc>2x 1GB PC-5300 (667MHz)</desc>
-    <cost>69</cost>
-    <link>http://www.corsair.com</link>
-    <rating>5</rating>
-    <manufacturer>Corsair</manufacturer>
-  </component>
-  <component>
-    <part>case</part>
-    <name>Atlas Server Case</name>
-    <desc>Black with a 550W PSU</desc>
-    <cost>195</cost>
-    <link>http://www.antec.com</link>
-    <rating>3.5</rating>
-    <manufacturer>Antec</manufacturer>
-  </component>
-  <component>
-    <part>dvd</part>
-    <name>DRW-2014L1tT</name>
-    <desc>20x DVDRW SATA with LightScribe</desc>
-    <cost>42</cost>
-    <link>http://www.asus.com</link>
-    <rating>4</rating>
-    <manufacturer>Asustek</manufacturer>
-  </component>
-  <component>
-    <part>lcd</part>
-    <name>X193W</name>
-    <desc>19" Widescreen LCD Monitor (Silver) 5ms response time 2000:1ACM</desc>
-    <cost>224</cost>
-    <link>http://www.acer.com</link>
-    <rating>3.5</rating>
-    <manufacturer>Acer</manufacturer>
-  </component>
-  <component>
-    <part>keyboard</part>
-    <name>Digital Media Pro</name>
-    <desc>Keyboard with lots of hotkeys for things</desc>
-    <cost>95</cost>
-    <link>http://www.microsoft.com</link>
-    <rating>4</rating>
-    <manufacturer>Microsoft</manufacturer>
-  </component>
-</computer>
+<data>
+  <title>My Computer</title>
+  <category>
+    <title div_name="hardware">Computer Hardware</title>
+    <item>
+      <id>CPU</id>
+      <name>E8400 Core 2 Duo</name>
+      <desc>3GHz Dual core with 6MB Cache</desc>
+      <rating>5</rating>
+      <cost>268</cost>
+      <link>htt://www.intel.com</link>
+      <manufacturer>Intel</manufacturer>
+    </item>
+    <item>
+      <id>gfx</id>
+      <name>Nvidia GeForce 8800GT</name>
+      <desc>128 Stream Processors, 512 MB DDR3 VRAM</desc>
+      <cost>355</cost>
+      <link>http://www.gainward.com</link>
+      <rating>5</rating>
+      <manufacturer>Gainward</manufacturer>
+    </item>
+    <item>
+      <id>wlan</id>
+      <name>WMP54G Wireless-G</name>
+      <desc>PCI Wireless Card</desc>
+      <cost>39</cost>
+      <link>http://www.linksys.com.au</link>
+      <rating>4</rating>
+      <manufacturer>Linksys</manufacturer>
+    </item>
+    <item>
+      <id>hdd</id>
+      <name>Baracuda</name>
+      <desc>250GB SATA2 HDD with NCQ</desc>
+      <cost>84</cost>
+      <link>http://www.seagate.com</link>
+      <rating>5</rating>
+      <manufacturer>Seagate</manufacturer>
+    </item>
+    <item>
+      <id>OS</id>
+      <name>Windows Vista Ultimate</name>
+      <desc>32Bit OEM</desc>
+      <cost>249</cost>
+      <link>http://www.microsoft.com/windows</link>
+      <rating>4</rating>
+      <manufacturer>Microsoft</manufacturer>
+    </item>
+    <item>
+      <id>mobo</id>
+      <name>P5K</name>
+      <desc>Standard Motherboard stuff</desc>
+      <cost>155</cost>
+      <link>http://www.asus.com</link>
+      <rating>4</rating>
+      <manufacturer>Asustek</manufacturer>
+    </item>
+    <item>
+      <id>ram</id>
+      <name>Value Select</name>
+      <desc>2x 1GB PC-5300 (667MHz)</desc>
+      <cost>69</cost>
+      <link>http://www.corsair.com</link>
+      <rating>5</rating>
+      <manufacturer>Corsair</manufacturer>
+    </item>
+    <item>
+      <id>case</id>
+      <name>Atlas Server Case</name>
+      <desc>Black with a 550W PSU</desc>
+      <cost>195</cost>
+      <link>http://www.antec.com</link>
+      <rating>3.5</rating>
+      <manufacturer>Antec</manufacturer>
+    </item>
+    <item>
+      <id>dvd</id>
+      <name>DRW-2014L1tT</name>
+      <desc>20x DVDRW SATA with LightScribe</desc>
+      <cost>42</cost>
+      <link>http://www.asus.com</link>
+      <rating>4</rating>
+      <manufacturer>Asustek</manufacturer>
+    </item>
+    <item>
+      <id>lcd</id>
+      <name>X193W</name>
+      <desc>19" Widescreen LCD Monitor (Silver) 5ms response time 2000:1ACM</desc>
+      <cost>224</cost>
+      <link>http://www.acer.com</link>
+      <rating>3.5</rating>
+      <manufacturer>Acer</manufacturer>
+    </item>
+    <item>
+      <id>keyboard</id>
+      <name>Digital Media Pro</name>
+      <desc>Keyboard with lots of hotkeys for things</desc>
+      <cost>95</cost>
+      <link>http://www.microsoft.com</link>
+      <rating>4</rating>
+      <manufacturer>Microsoft</manufacturer>
+    </item>
+  </category>
+  <category>
+    <title div_name="software">Computer Software</title>
+    <item>
+      <id>Game: OB</id>
+      <name>The Orange Box</name>
+      <desc>Collection of five games in the Half Life 2 series</desc>
+      <rating>5</rating>
+      <cost>51.35</cost>
+      <link>http://www.orange.half-life2.com</link>
+      <manufacturer>VALVe</manufacturer>
+    </item>
+    <item>
+      <id>Game: AS</id>
+      <name>Audiosurf</name>
+      <desc>Music visualisation game</desc>
+      <rating>4</rating>
+      <cost>3.93</cost>
+      <link>http://www.audio-surf.com</link>
+      <manufacturer>Audiosurf LLC</manufacturer>
+    </item>
+    <item>
+      <id>Game: BS</id>
+      <name>Bioshock</name>
+      <desc>Adventure FPS game set in a underwater city</desc>
+      <rating>4</rating>
+      <cost>7.45</cost>
+      <link>http://www.2kgames.com/bioshock/</link>
+      <manufacturer>2K Games</manufacturer>
+    </item>
+  </category>
+</data>

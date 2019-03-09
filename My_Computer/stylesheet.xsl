@@ -19,53 +19,62 @@
 	</style>
       </head>
       <body>
-        <h2>My Computer</h2>
-        <table border="1">
-          <tr>
-            <th align="left">Part</th>
-            <th align="left">Name</th>
-            <th align="left">Description</th>
-            <th align="left">Cost</th>
-            <th align="left">Rating</th>
-            <th align="left">Link</th>
-          </tr>
-          <xsl:for-each select="computer/component">
-            <tr>
-              <xsl:choose>
-                <xsl:when test="position() mod 2 = 0">
-                  <xsl:attribute name="class">
-                    <xsl:value-of select="'even'" />
-                  </xsl:attribute>
-                </xsl:when>
-                <xsl:otherwise></xsl:otherwise>
-              </xsl:choose>
-              <td>
-                <xsl:value-of select="part" />
-              </td>
-              <td>
-                <xsl:value-of select="manufacturer" />&#160;<xsl:value-of select="name" /></td>
-              <td>
-                <xsl:value-of select="desc" />
-              </td>
-              <td>
+        <h2>
+          <xsl:value-of select="data/title" /> <a href="#" onclick="javascript:document.getElementById('hardware').style.display = 'none';">hide</a>
+        </h2>
+        <xsl:for-each select="data/category">
+          <div id="{title/@div_name}">
+            <h3>
+              <xsl:value-of select="title" />
+            </h3>
+            <table border="1">
+              <tr>
+                <th align="left">Item</th>
+                <th align="left">Name</th>
+                <th align="left">Description</th>
+                <th align="left">Cost</th>
+                <th align="left">Rating</th>
+                <th align="left">Link</th>
+              </tr>
+              <xsl:for-each select="item">
+                <tr>
+                  <xsl:choose>
+                    <xsl:when test="position() mod 2 = 0">
+                      <xsl:attribute name="class">
+                        <xsl:value-of select="'even'" />
+                      </xsl:attribute>
+                    </xsl:when>
+                    <xsl:otherwise></xsl:otherwise>
+                  </xsl:choose>
+                  <td>
+                    <xsl:value-of select="id" />
+                  </td>
+                  <td>
+                    <xsl:value-of select="name" /></td>
+                  <td>
+                    <xsl:value-of select="desc" />
+                  </td>
+                  <td>
                 $<xsl:value-of select="cost" /></td>
-              <td>
-		<img src="{rating}.gif" />
-              </td>
-              <td>
-                <a href="{link}">
-                  <xsl:value-of select="manufacturer" />
-                </a>
-              </td>
-            </tr>
-          </xsl:for-each>
-          <tr>
-            <td colspan="3" align="right">Total Cost:</td>
-            <td>$<xsl:value-of select="sum(/computer/component/cost)" /></td>
-            <td>Overall Rating:  <xsl:variable name="sum_rating" select="sum(/computer/component/rating)" /><xsl:variable name="count_rating" select="count(/computer/component/cost)" /><xsl:value-of select="round($sum_rating div $count_rating)" /></td>
-            <td> </td>
-          </tr>
-        </table>
+                  <td>
+                    <img src="{rating}.gif" />
+                  </td>
+                  <td>
+                    <a href="{link}">
+                      <xsl:value-of select="manufacturer" />
+                    </a>
+                  </td>
+                </tr>
+              </xsl:for-each>
+              <tr>
+                <td colspan="3" align="right">Total Cost:</td>
+                <td>$<xsl:value-of select="round(sum(item/cost))" /></td>
+                <td>Overall Rating:  <xsl:variable name="sum_rating" select="sum(item/rating)" /><xsl:variable name="count_rating" select="count(item/cost)" /><xsl:value-of select="round($sum_rating div $count_rating)" /></td>
+                <td> </td>
+              </tr>
+            </table>
+          </div>
+        </xsl:for-each>
       </body>
     </html>
   </xsl:template>
